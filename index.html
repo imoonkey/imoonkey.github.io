@@ -15,15 +15,16 @@
     <meta name="description" content="Homepage">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="./assets/img/q.ico"/>
+    <link rel="shortcut icon" href="images/q.ico"/>
     <link rel="canonical" href="">
+
     <!--CSS-->
     <!--<link href="./assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <!--<link href="./assets/css/docs.min.css" rel="stylesheet" type="text/css">-->
-    <link href="./assets/css/fancybox.css" rel="stylesheet" type="text/css">
+    <link href="./assets/css/lightbox.css" rel="stylesheet" type="text/css">
     <link href="./assets/css/sidebar.css" rel="stylesheet" type="text/css">
     <link href="./assets/css/main.css" rel="stylesheet" type="text/css">
+
     <!--Font -->
     <script src="//use.edgefonts.net/open-sans:n3,i3,n4,i4,n6,i6,n7,i7,n8,i8.js"></script>
     <link rel="stylesheet" media="all"
@@ -74,14 +75,14 @@
                         <a href="http://www.cmu.edu/">Carnegie Mellon University</a><br>
                         Pittsburgh, PA 15213, USA <br>
                         Office: Gates & Hillman Center 7110<br>
-                        Email: <img src="./assets/img/qiguo_email.png" height="18"></p>
+                        Email: <img src="images/qiguo_email.png" height="18"></p>
 
                     <p></p>
                 </div>
                 <div id="portrait" class="col-md-6 col-sm-6 col-xs-12" role="complementary">
                     <p>
-                        <a href="./assets/img/QiGuo.jpg" title="Prague, Czech Republic" class="fancybox" rel="gallery0">
-                            <img src="./assets/img/qiguo_small.jpg"
+                        <a href="images/QiGuo.jpg" data-title="Prague, Czech Republic" data-lightbox="QiGuo">
+                            <img src="images/qiguo_small.jpg" alt=""
                                  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" title="Prague, Czech Republic">
                         </a>
                     </p>
@@ -125,9 +126,9 @@
                     <h4>Questimator: Generating Knowledge Assessments for Arbitrary Topics</h4>
 
                     <div class="col-md-4 col-xs-12">
-                        <a class="fancybox" rel="group"
+                        <a data-lightbox="questimator"
                            href="./projects/questimator/questimator_framework.jpeg"
-                           title="Questimator Framework">
+                           data-title="Questimator Framework">
                             <img src="./projects/questimator/questimator_framework.jpeg"
                                  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" alt=""/>
                         </a>
@@ -161,9 +162,9 @@
                     <h4>Sentiment Analysis for Sparse Social Media Text</h4>
 
                     <div class="col-md-4 col-xs-12">
-                        <a class="fancybox" rel="group"
+                        <a data-lightbox="sentiment"
                            href="./projects/sentiment/sentiment_framework.jpg"
-                           title="Sentiment Analysis Framework">
+                           data-title="Sentiment Analysis Framework">
                             <img src="./projects/sentiment/sentiment_framework.jpg"
                                  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" alt=""/>
                         </a>
@@ -184,8 +185,9 @@
                     <h4>Digital Barber: 3D Hair Manipulation on Mobile Phone</h4>
 
                     <div class="col-md-offset-0 col-md-4 col-sm-offset-2 col-sm-8 col-xs-12 ">
-                        <a class="fancybox" rel="group" href="./projects/digitalbarber/barber_example.jpg"
-                           title="Extract 3D head model from a single image and map hair extracted from another image onto it.">
+                        <a data-lightbox="barber"
+                           href="./projects/digitalbarber/barber_example.jpg"
+                           data-title="Extract 3D head model from a single image and map hair extracted from another image onto it.">
                             <img src="./projects/digitalbarber/barber_example.jpg"
                                  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" alt=""/>
                         </a>
@@ -264,22 +266,11 @@
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <![endif]-->
 <script src="./assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="./assets/js/jquery.fancybox.pack.js"></script>
-<script src="./assets/js/jquery.fancybox.pack.js"></script>
+<script src="./assets/js/lightbox.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.3.0/anchor.min.js"></script>
 <script type="text/javascript">
-    (function ($) {
-        $('.fancybox').fancybox({
-            openEffect: 'elastic',
-            closeEffect: 'elastic',
-            helpers: {
-                title: {
-                    type: 'inside'
-                }
-            }
-        });
-    })(jQuery);
+
 
     anchors.options.placement = "left";
     anchors.add("h2, h3, h4, h5").remove("h1");
